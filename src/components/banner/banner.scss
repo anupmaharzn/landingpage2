@@ -1,0 +1,42 @@
+.banner {
+  width: 100%;
+  position: relative;
+  color: var(--white);
+
+  .title1 {
+    &::before {
+      content: none;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    background-color: var(--dark-violet);
+    padding: 5rem 0;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      margin-left: auto;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+  img {
+    max-height: 22rem;
+    max-width: 52rem;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    @media (max-width: 767px) {
+      max-height: 18rem;
+      max-width: 15rem;
+      top: 0;
+    }
+  }
+}
